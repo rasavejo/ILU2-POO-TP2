@@ -22,7 +22,7 @@ public class ControlAcheterProduit {
 	}
 	
 	public int acheterProduit(Gaulois vendeur,int quantite) {
-		Etal etal = controlTrouverEtalVendeur.trouverEtalVendeur(vendeur.getNom());
+		Etal etal = village.rechercherEtal(vendeur);
 		return etal.acheterProduit(quantite);
 	}
 }
